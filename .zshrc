@@ -53,7 +53,7 @@ plugins=(git adb tmux osx boot2docker brew jira docker autopep8 colorize common-
 
 # User configuration
 
-  export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games"
+  export PATH="$HOME/.picknpack/:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh

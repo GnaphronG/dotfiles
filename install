@@ -1,6 +1,6 @@
 #! /bin/sh
 
-SWD=$(readlink -f "$0" | xargs dirname)
+SWD=$(realpath "$0" | xargs dirname)
 
 for dot in .[a-zA_Z0-9_]*; do 
   if [ -e $HOME/$dot ]; then

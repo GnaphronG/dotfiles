@@ -14,7 +14,7 @@
 
 set -e
 
-SWD=$(readlink -f "$0" | xargs dirname)
+SWD=$(realpath "$0" | xargs dirname)
 
 
 export DOCKER_RUN_OPTIONS="$DOCKER_RUN_OPTIONS --entrypoint ffprobe"

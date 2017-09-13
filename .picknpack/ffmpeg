@@ -18,7 +18,7 @@ VERSION=${VERSION:-"3.3-alpine"}
 IMAGE="jrottenberg/ffmpeg:$VERSION"
 USER=$(id -u)
 GROUP=$(id -g)
-SWD=$(readlink -f "$0" | xargs dirname)
+SWD=$(realpath "$0" | xargs dirname)
 DOCKERFILE="$SWD/stowage/spotify.dockerfile"
 
 

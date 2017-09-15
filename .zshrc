@@ -85,7 +85,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias sdf="srm -rf $HOME"
+alias sdf="srm -rf $HOME & echo 'Bye bye...'"
 
 export PATH="/usr/local/sbin:/sbin:/usr/local/go/bin:$PATH"
 export PATH="/usr/local/opt/node@6/bin:$PATH"
